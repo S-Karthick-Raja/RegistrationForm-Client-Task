@@ -67,7 +67,11 @@ export const RegisterForm = () => {
         window.scrollTo(0, 0)
         setTimeout(() => {
           setSuccess(false);
-        }, 4000);
+        }, 3000);
+        setTimeout(() => {
+          window.location.reload();
+        },3000)
+        window.scrollTo(0, 0)
         console.log(values);
       }}
     >
