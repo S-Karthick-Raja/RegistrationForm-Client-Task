@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { RegisterForm } from './components/RegisterForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mt-3">
+      <div className="row">
+        <div className="col-md-5">
+          <RegisterForm />
+        </div>
+        <div className="col-md-7 my-auto">
+          <img className="img-fluid w-100" src="https://www.kindpng.com/picc/m/541-5412391_online-register-icon-png-transparent-png.png" alt=""/>
+        </div>
+      </div>
     </div>
   );
 }
